@@ -1,0 +1,94 @@
+body{
+    background-image: url('../images/bg.jpg');
+    margin: 0;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+/* FOR NAVIGATION */
+
+nav{
+    float: left;
+}
+.vertical-menu {
+    width: 200px;
+    height:100vh;
+    background: white ;
+    color: grey;
+  }
+
+.vertical-menu a{
+    
+    width: 200px;
+    height:100vh;
+    background: white ;
+    color: grey;
+  }
+
+.vertical-menu h2{
+    text-align: center;
+    padding:30px 5px 5px 5px; 
+    background: white ;
+    color: grey;
+    font-weight: 400;
+  }
+
+.vertical-menu h3{
+    text-align: center;
+    padding:0px 5px 0px 5px; 
+    margin: 0;
+    font-weight: 400;
+  }
+
+.vertical-menu li{
+    padding: 10px;
+    font-size: 20px;
+}
+/**************************************/
+
+/* For Home */
+
+.home{
+    height:100vh;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.typewriter h1 {
+    position: relative;
+    top:250px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+/**********************************/
