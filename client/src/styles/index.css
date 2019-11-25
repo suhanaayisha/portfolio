@@ -19,6 +19,7 @@ li{
 /* FOR NAVIGATION */
 
 nav{
+    position: fixed;
     float: left;
 }
 .vertical-menu {
@@ -30,10 +31,13 @@ nav{
 
 .vertical-menu a{
     
-    width: 200px;
-    height:100vh;
-    background: white ;
+    width: 100%;
     color: grey;
+  }
+
+.vertical-menu hr{
+    
+    margin-bottom: 0;
   }
 
 .vertical-menu h2{
@@ -51,15 +55,36 @@ nav{
     font-weight: 400;
   }
 
+.vertical-menu ul{
+    margin-top: 0;
+    padding-left:0;
+}
+
 .vertical-menu li{
-    padding: 10px;
+
+    padding: 10px 0px 10px 20px;
+    cursor: pointer;
     font-size: 20px;
+}
+
+.vertical-menu li:hover {
+  background: #f2f3f4;
+  border: 1px solid #f2f3f4;
+}
+
+.vertical-menu .intro{
+  cursor: pointer;
+}
+
+.vertical-menu li .active{
+  color: black;
 }
 /**************************************/
 
 /* For Home */
 
 .home{
+    margin-left: 200px;
     height:100vh;
     text-align: center;
     color: white;
