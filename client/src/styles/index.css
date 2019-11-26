@@ -1,10 +1,16 @@
 body{
-    background-image: url('../images/bg.jpg');
     margin: 0;
 }
 
 h1,h2,h3{
     margin: 0;
+}
+h1{
+  background: #619E89;
+  color: white;
+  padding: 25px;
+  font-weight: 400;
+  box-shadow: 0 5px 10px 8px #888888;
 }
 
 a{
@@ -16,6 +22,10 @@ li{
     list-style: none;
 }
 
+.common{
+  margin-left: 200px;
+  height:100vh;
+}
 /* FOR NAVIGATION */
 
 nav{
@@ -27,6 +37,7 @@ nav{
     height:100vh;
     background: white ;
     color: grey;
+    box-shadow: 0 5px 10px 8px #888888;
   }
 
 .vertical-menu a{
@@ -84,18 +95,25 @@ nav{
 /* For Home */
 
 .home{
-    margin-left: 200px;
-    height:100vh;
-    text-align: center;
-    color: white;
-    font-size: 25px;
+  background: url('../images/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 25px;
 }
 
 .typewriter h1 {
+  background:none;
   overflow: hidden;
   border-right: .15em solid white;
   white-space: nowrap;
   letter-spacing: .15em;
+  box-shadow: 0 0px 0px 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .typewriter h1:nth-child(1) {
@@ -191,3 +209,113 @@ nav{
 }
 
 /**********************************/
+
+/* About Page */
+
+.about{
+  background: white;
+  color: grey;
+  font-size: 25px;
+
+}
+
+.about p {
+  margin: 0;
+  padding-left: 25px;
+  font-size: 1em;
+}
+
+.about .profile{
+  background:  url('../images/profile.png') no-repeat;
+  width: 290px;
+  height: 290px;
+  object-fit: contain;
+  margin:20px;
+  border: 0;
+  position: relative;
+  left:400px;
+  
+}
+
+/******************************/
+
+/* Experience */
+.experience{
+  background: white;
+  color: grey;
+  font-size: 25px;
+}
+
+.experience h1 {
+  color: white;
+  padding: 20px;
+  font-weight: 400;
+}
+
+/*****************************/
+
+/* Projects */
+.projects{
+  background: white;
+  color: grey;
+  font-size: 25px;
+}
+
+.projects h1 {
+  color: white;
+  padding: 20px;
+  font-weight: 400;
+}
+
+/*********************/
+
+/* SKills */
+
+.skills{
+  background: white;
+  color: grey;
+  font-size: 25px;
+}
+
+.skills h1 {
+  color: white;
+  padding: 20px;
+  font-weight: 400;
+}
+/**************/
+
+/* Education */
+
+.education{
+  background: white;
+  color: grey;
+  font-size: 25px;
+}
+
+.education h1 {
+  color: white;
+  padding: 20px;
+  font-weight: 400;
+}
+
+/*******************/
+
+/* Contact */
+
+.contact{
+  background: white;
+  color: grey;
+  font-size: 25px;
+}
+
+.contact h1{
+  color: white;
+  padding: 20px;
+  font-weight: 400;
+}
+
+/******************/
+
+
+
+
