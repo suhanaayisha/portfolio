@@ -2,10 +2,9 @@
 
 Software engineer based in **Dubai, UAE**, with **6+ years** of experience. I've spent that time shipping production front ends at scale at **Noon**, one of the Middle East's largest e-commerce platforms. Alongside that, I build full-stack applications end to end: **Node.js / Express and Next.js APIs, MongoDB, authentication, automated testing and CI/CD.** I also hold an M.Sc. in Artificial Intelligence & Computer Science.
 
-This repository is the source code of my portfolio site.
+This repository is the source code of my portfolio site: **[suhanaayisha.com](https://suhanaayisha.com/)**
 
-<!-- TODO: add the live site link here, e.g. **Live site:** https://your-domain.com -->
-📄 [Résumé (PDF)](public/resume.pdf) · ✉️ [suhanaayisha@gmail.com](mailto:suhanaayisha@gmail.com) · 💻 [GitHub](https://github.com/suhanaayisha)
+🌐 [Portfolio](https://suhanaayisha.com/) · 💼 [LinkedIn](https://www.linkedin.com/in/suhana-ayisha/) · 📄 [Résumé (PDF)](public/resume.pdf) · ✉️ [suhanaayisha@gmail.com](mailto:suhanaayisha@gmail.com) · 💻 [GitHub](https://github.com/suhanaayisha)
 
 ---
 
