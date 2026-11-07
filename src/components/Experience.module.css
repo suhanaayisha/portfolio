@@ -1,0 +1,77 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  padding-block: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.period {
+  flex: 0 0 150px;
+  padding-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--dim);
+}
+
+.detail {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.role {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.company {
+  color: var(--accent);
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.highlights li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.teamName {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--dim);
+}

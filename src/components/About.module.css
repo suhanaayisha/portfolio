@@ -1,0 +1,56 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background: var(--bg);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+}
+
+.photo {
+  margin-top: 20px;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 0 0 6px var(--bg), 0 0 0 7px color-mix(in srgb, var(--accent) 40%, transparent);
+}

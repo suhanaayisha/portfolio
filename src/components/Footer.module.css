@@ -1,0 +1,34 @@
+.footer {
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 28px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.socials {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: flex;
+  padding: 12px;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.social:hover {
+  color: var(--accent);
+}

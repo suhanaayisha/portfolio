@@ -1,0 +1,99 @@
+.header {
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+.trail {
+  color: var(--dim);
+}
+
+.caret {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background: var(--accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.link {
+  display: block;
+  padding: 12px 14px;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.resume {
+  display: block;
+  margin-left: 8px;
+  padding: 11px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  transition: background-color 0.15s;
+}
+
+.resume:hover {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.back:hover {
+  color: var(--text);
+  border-color: var(--dim);
+}
+
+/* On phones, keep just the logo and résumé; sections are a scroll away. */
+@media (max-width: 640px) {
+  .links li:not(:last-child) {
+    display: none;
+  }
+}

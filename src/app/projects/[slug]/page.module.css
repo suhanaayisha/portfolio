@@ -1,0 +1,277 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 96px 56px;
+}
+
+.title {
+  max-width: 900px;
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.lead {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+/* ---------- Meta ---------- */
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 24px;
+  background: var(--bg);
+}
+
+.metaItem dt {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.metaItem dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.media {
+  margin-top: 56px;
+  aspect-ratio: 16 / 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.mediaContain {
+  padding: 24px;
+  background: var(--inset);
+}
+
+/* ---------- Body ---------- */
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  padding-block: 96px;
+}
+
+.toc {
+  flex: 1 1 220px;
+  align-self: flex-start;
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.tocLabel {
+  padding-bottom: 8px;
+  color: var(--dim);
+}
+
+.tocLink {
+  padding-block: 10px;
+  color: var(--muted);
+}
+
+.tocLink:hover {
+  color: var(--accent);
+}
+
+.articles {
+  flex: 3 1 600px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  scroll-margin-top: 24px;
+}
+
+.articleTitle {
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.bullets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* architecture */
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.flowStep {
+  flex: 1 1 140px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flowBox {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.flowArrow {
+  color: var(--accent);
+}
+
+/* results */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.metricValue {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.metric dd {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* next */
+.next {
+  border-top: 1px solid var(--border);
+}
+
+.nextLink {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 64px;
+}
+
+.nextLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--dim);
+}
+
+.nextName {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.nextArrow {
+  font-size: 32px;
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+
+.nextLink:hover .nextArrow {
+  transform: translateX(6px);
+}
+
+@media (max-width: 860px) {
+  .toc {
+    position: static;
+  }
+}

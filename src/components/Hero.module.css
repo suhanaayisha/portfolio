@@ -1,0 +1,122 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 64px;
+  padding-block: 112px 120px;
+}
+
+.copy {
+  flex: 1 1 520px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.title {
+  font-size: clamp(2.75rem, 6vw, 4.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.titleMuted {
+  color: var(--dim);
+}
+
+.intro {
+  max-width: 560px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+/* ---------- Terminal ---------- */
+
+.terminal {
+  flex: 1 1 400px;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.light {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.barTitle {
+  margin-left: 8px;
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 24px 26px;
+}
+
+.prompt {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.out {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.key {
+  color: var(--dim);
+}
+
+.cursor {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  vertical-align: -3px;
+  background: var(--text);
+  animation: blink 1.1s steps(1) infinite;
+}
