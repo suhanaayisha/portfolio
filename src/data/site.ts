@@ -56,7 +56,7 @@ export interface Job {
 export const site = {
   name: "Suhana Ayisha",
   handle: "suhanaayisha",
-  role: "Senior Front-End Software Engineer",
+  role: "Software Development Engineer",
   tagline: "fast, scalable web apps",
   intro:
     "Front-end engineer with 6+ years of experience building customer-facing features, enterprise CMS platforms and B2B apps — on web and mobile — for Noon, one of the Middle East's largest e-commerce platforms.",

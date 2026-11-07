@@ -1,4 +1,4 @@
-# Suhana Ayisha — Full-Stack Software Engineer
+# Suhana Ayisha — Software Development Engineer
 
 Software engineer based in **Dubai, UAE**, with **6+ years** of experience. I've spent that time shipping production front ends at scale at **Noon**, one of the Middle East's largest e-commerce platforms. Alongside that, I build full-stack applications end to end: **Node.js / Express and Next.js APIs, MongoDB, authentication, automated testing and CI/CD.** I also hold an M.Sc. in Artificial Intelligence & Computer Science.
 
